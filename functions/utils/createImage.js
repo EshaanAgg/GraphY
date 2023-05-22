@@ -2,7 +2,7 @@ const { JSDOM } = require("jsdom");
 const d3 = require("d3");
 const sharp = require("sharp");
 
-async function createImage(data, fileName) {
+async function createImage(data) {
 	const dom = new JSDOM(`<!DOCTYPE html><body></body>`);
 	const body = d3.select(dom.window.document.querySelector("body"));
 
@@ -76,7 +76,8 @@ async function createImage(data, fileName) {
 		.style("fill", "#69b3a2")
 		.attr("stroke", "black");
 
-	await sharp(Buffer.from(body.html())).png().toFile(`${fileName}.png`);
+	const buffer = await sharp(Buffer.from(body.html())).png().toBuffer();
+	return buffer;
 }
 
 exports.createImage = createImage;
