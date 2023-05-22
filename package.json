@@ -1,0 +1,17 @@
+{
+	"name": "graphy",
+	"version": "1.0.0",
+	"description": "Generate simple graphs on the cloud!",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "EshaanAgg",
+	"license": "ISC",
+	"dependencies": {
+		"d3": "^4.13.0",
+		"jsdom": "^22.0.0",
+		"sharp": "^0.32.1",
+		"telegram-bot-api": "^2.0.1"
+	}
+}
