@@ -20,7 +20,7 @@ const api = new TG({
 
 async function sendImage(chat_id, bufferData, caption = "Here is your generated report!") {
 	await supabase.storage.from("reports").upload(`${chat_id}.png`, bufferData, {
-		cacheControl: "3600",
+		cacheControl: "0",
 		upsert: true,
 		contentType: "image/png",
 	});
