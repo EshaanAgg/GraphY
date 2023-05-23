@@ -6,6 +6,10 @@ The function is hosted on Netlify!
 
 ### Sample Request
 
+URL: `https://graphy-saras.netlify.app/.netlify/functions/sendReport`
+Method: `POST`
+Sample Request Body:
+
 ```
 {
   "chatId": "1677617528",
