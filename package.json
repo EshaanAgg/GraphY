@@ -12,6 +12,7 @@
 		"@supabase/supabase-js": "^2.22.0",
 		"d3": "^4.13.0",
 		"jsdom": "^22.0.0",
+		"nanoid": "^2.1.11",
 		"sharp": "^0.32.1",
 		"telegram-bot-api": "^2.0.1"
 	}
